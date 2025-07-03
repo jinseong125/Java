@@ -12,16 +12,20 @@ public class Main {
     book.setTitle("혼자 공부하는 자바");
 
     Publisher publisher = new Publisher();
-    publisher.setName("한빛미디어");
-    publisher.setLocation("인천");
+    publisher.setName("출판사:" + "한빛미디어");
+    publisher.setLocation("출판사위치:" + "인천");
     
     Contact contact = new Contact();
-    contact.setTel("010-0000");
-    contact.setFax("1234");
+    contact.setTel("전화번호:" + "010-1234-5678");
+    contact.setFax("팩스번호:" + "1234");
     
     publisher.setContact(contact);
     
-    System.out.println(book.getTitle() + publisher.getName() + publisher.getLocation() + contact.getFax() + contact.getTel());
+    System.out.println(book.getTitle()
+        + publisher.getName() +
+        publisher.getLocation() +
+        contact.getFax() +
+        contact.getTel());
   }
 
 }
