@@ -44,7 +44,10 @@ public class Boxer {
    * @param other 상대 복서(Boxer) 객체입니다.
    */
   public void punch(Boxer other) {
-    /* 구현 */
+    if (other.energy < power) {  //상대방의 에너지가 내 파워보다 작으면
+      other.energy = 0; // 음수로 떨어지지않게 상대방의 에너지를 0으로 처리.
+    } else {
+   other.energy -= this.power;
   }
-  
+  }
 }

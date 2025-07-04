@@ -13,19 +13,19 @@ public class Main {
 
     Publisher publisher = new Publisher();
     publisher.setName("한빛미디어");
-    publisher.setLocation("인천");
+    publisher.setLocation("서울시 서대문구 연희로2길 62");
     
     Contact contact = new Contact();
-    contact.setTel( "010-1234-5678");
-    contact.setFax("1234");
+    contact.setTel( "02-325-5544");
+    contact.setFax("02-336-7124");
     
     publisher.setContact(contact);
     
     System.out.println(
-        "제목     : " + book.getTitle()    + "\n" +
-        "출판사   : " + publisher.getName() + "\n" +
+        "제목     : " + book.getTitle()         + "\n" +
+        "출판사   : " + publisher.getName()     + "\n" +
         "위치     : " + publisher.getLocation() + "\n" +
-        "전화번호 : " + contact.getTel()    + "\n" +
+        "전화번호 : " + contact.getTel()        + "\n" +
         "팩스번호 : " + contact.getFax()
     );
 
