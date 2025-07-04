@@ -10,7 +10,7 @@ public class Main {
     Store store1 = new Store(10, 1.9, 100.0);
     Store store2 = new Store(10, 2.9, 100.0);
     //----- 첫 번째 상점에서 상품을 구매합니다. 
-    customer.purchase(store1, 5, 10.0);
+    customer.purchase(store1, 500, 10.0);
     //----- 두 번째 상점에서 상품을 구매합니다.
     customer.purchase(store2, 5, 15.0);
     //----- 모든 상점의 정보와 고객의 정보를 출력합니다.
