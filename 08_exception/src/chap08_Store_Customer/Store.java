@@ -1,4 +1,4 @@
-package chap07_Store_Customer;
+package chap08_Store_Customer;
 
 /**
  * 단일 상품을 판매하는 상점(Store) 클래스입니다.

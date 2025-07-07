@@ -1,4 +1,4 @@
-package chap07_Store_Customer;
+package chap08_Store_Customer;
 
 /**
  * 상품과 잔돈을 저장하는 상품앤잔돈(ProductAndChange) 클래스입니다.

@@ -1,4 +1,4 @@
-package chap07_Store_Customer;
+package chap08_Store_Customer;
 
 /**
  * 상품을 구매하는 고객(Customer) 클래스입니다.

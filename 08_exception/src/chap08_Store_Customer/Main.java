@@ -1,4 +1,4 @@
-package chap07_Store_Customer;
+package chap08_Store_Customer;
 
 public class Main {
 
