@@ -14,7 +14,7 @@ package chap02_generic;
 
 public class Container<T> {  // Container <Integer>, Container <Double> . . .
   
-  // <T> : 타입 파라미터(임의의 참조타입, 관례적으로 T, E, K, V등을 주로 사용
+  // <T> : 타입 파라미터 - 타입의 약자(임의의 참조타입, 관례적으로 T, E, K, V등을 주로 사용
 
   private T item;
   public T getItem() {
@@ -23,9 +23,11 @@ public class Container<T> {  // Container <Integer>, Container <Double> . . .
   public void setItem(T item) {
     this.item = item;
   }
-  
-  
+  /*
+   * **필드(변수)는 보통 private**로 숨기고,
+   *   직접 접근하지 못하게 막아둔 뒤,
+   *   필드 값을 읽거나(=get), 바꾸거나(=set) 하는 메소드(=게터/세터)로만 접근하게 만듬
+   */
   
   }
   
-

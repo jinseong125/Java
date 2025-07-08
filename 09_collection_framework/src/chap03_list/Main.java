@@ -100,11 +100,12 @@ public class Main {
      * 2. 내림차순 정렬
      *    Collections.sort(List<Comparable>, Collections.reverseOrder())
      * 3. List 정렬을 위해서는 Comparable 인터페이스를 구현한 객체를 요소로 저장해야 합니다.
+     * 4. 배열이면 Arrays.sort() , 리스트면 Collections.sort()
      */
     
     // String 리스트 (Comparable 인터페이스의 구현클래스)
     List<String> list1 = new ArrayList<String>();
-    list1.add("c"); list1.add("d"); list1.add("bts"); list1.add("aespa");
+    list1.add("crush"); list1.add("day6"); list1.add("bts"); list1.add("aespa");
     Collections.sort(list1);  // 오름차순 정렬
     System.out.println(list1);
     Collections.sort(list1, Collections.reverseOrder());
@@ -130,9 +131,9 @@ public class Main {
      */
     // Person 리스트 (일반 클래스)
     List<Person> team = new ArrayList<Person>();
-    team.add(new Person("뽀로로", 8));
-    team.add(new Person("나루토", 17));
-    team.add(new Person("루피",   18));
+    team.add(new Person("짱구", 5));
+    team.add(new Person("나루토", 16));
+    team.add(new Person("루피",   19));
     // Comparator 인터페이스를 이용해 정렬 방식을 동적으로 설정
     Collections.sort(team, new Comparator<Person>() {
       @Override

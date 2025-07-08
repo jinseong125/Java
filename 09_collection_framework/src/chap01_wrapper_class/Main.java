@@ -36,8 +36,8 @@ public class Main {
     System.out.println(h);
     
     //----- Wrapper 객체에서 기본 타입 값을 꺼내기 (Auto Boxing)
-    int x = c;
-    System.out.println(x);
+   // int x = c;
+   // System.out.println(x);
 
   }
 

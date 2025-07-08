@@ -6,7 +6,7 @@ package chap03_list;
  * 1. functional Interface입니다. (추상 메소드가 1개입니다.)
  * 2. 정렬이 필요한 객체들은 Comparable 인터페이스의 구현클래스 객체여야 합니다.
  * 3. 추상 메소드
- *    1) int compareTo(T t);
+ *    1) int compareTo(T t); - 자바에서 두 객체를 비교할때, 주로 정렬(오름차순/내림차순)할 때 사용하는 메소드
  *    2) 결과가 음수이면 현재 객체를 t 앞에 두고, 양수이면 현재 객체를 t 뒤에 둡니다.
  */
 
