@@ -12,7 +12,7 @@ public class Cart {
   
   // 생성자
   public Cart() {
-    // new Cart() 실행 시 products 배열이 생성됩니다.
+  // new Cart() 실행 시 products 배열이 생성됩니다.
     products = new Product[LIMIT];
   }
 
