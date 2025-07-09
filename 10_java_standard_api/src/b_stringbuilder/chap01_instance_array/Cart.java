@@ -1,4 +1,4 @@
-package chap01_string.b_stringbuilder.chap01_instance_array;
+package b_stringbuilder.chap01_instance_array;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,15 +9,14 @@ import javax.swing.JOptionPane;
 public class Cart {
 
   // 필드
-  private List<Map<String, Object>> products; 
+  private List<Map<String, Object>> products;
   
   // 생성자
-  public Cart() { 
+  public Cart() {
     products = new ArrayList<Map<String,Object>>();
   }
 
   // 메소드
- 
   public List<Map<String, Object>> getProducts() {
     return products;
   }
@@ -33,18 +32,18 @@ public class Cart {
     }
     products.add(product);
   }
-    
+  
   public Map<String, Object> removeProduct(int idx) {
     int count = products.size();
     if (count == 0) {
       JOptionPane.showMessageDialog(null, "Cart가 비어있습니다.");
       return null;
     }
-    if (idx < 0 || idx > count) {
+    if (idx < 0 || idx >= count) {
       JOptionPane.showMessageDialog(null, idx + "는 없는 인덱스입니다.");
       return null;
     }
-    
     return products.remove(idx);
-    }
   }
+  
+}
