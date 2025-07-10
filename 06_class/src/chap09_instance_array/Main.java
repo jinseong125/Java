@@ -24,13 +24,13 @@ public class Main {
     customer.setCart(cart1);
     
     // 쇼핑    
-    customer.addToCart(product1);
-    customer.addToCart(product2); 
-    customer.addToCart(product3);
-    customer.addToCart(product4);
-    customer.addToCart(product5);
+    customer.addToCart(product1);//0
+    customer.addToCart(product2); //1
+    customer.addToCart(product3);//2
+    customer.addToCart(product4);//3
+    customer.addToCart(product5);//4
     
-    customer.removeFromCart(0);
+    customer.removeFromCart(5);
     
     // 구매
     String receipt = customer.purchase();

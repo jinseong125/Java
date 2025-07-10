@@ -1,4 +1,4 @@
-package b_stringbuilder.chap01_instance_array;
+package chap01_string.b_stringbuilder.chap01_instance_array;
 
 import java.util.ArrayList;
 import java.util.List;

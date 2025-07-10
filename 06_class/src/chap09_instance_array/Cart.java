@@ -45,12 +45,12 @@ public class Cart {
     products[count++] = product;
   }
     
-  public Product removeProduct(int idx) {
+  public Product removeProduct(int idx) { // 5
     if (count == 0) {
       JOptionPane.showMessageDialog(null, "Cart가 비어있습니다.");
       return null;
     }
-    if (idx < 0 || idx > count) {
+    if (idx < 0 || idx > count) {// 5 < 0 5 > 5
       JOptionPane.showMessageDialog(null, idx + "는 없는 인덱스입니다.");
       return null;
     }

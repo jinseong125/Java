@@ -250,7 +250,14 @@ public class Main {
   }
   
   public static void main(String[] args) {
-    method15();
+    method1();
+    method2();
+    method3();
+    method4();
+    method5();
+    method6();
+    method7();
+    //method15();
   }
 
 }
