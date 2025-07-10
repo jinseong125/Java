@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -17,11 +18,11 @@ public class Main {
     // 형식 : 하이픈이 제거된 UUID + 밑줄 + 타임스탬프.확장자
     
     String fileName = "apple.jpg";
-    
+    System.out.println(fileName.replace("-", ""));
     
   }
   
-  public static Map<String, Object> method2(String id) {
+  //public static Map<String, Object> method2(String id) {
     
     // 문제2. 주민등록번호를 이용해 나이와 성별을 구하고 이를 Map으로 반환하세요.
     // 나이 : 현재년도 - 태어난년도
@@ -30,7 +31,7 @@ public class Main {
     
     
     
-  }
+ // }
 
   public static void method3() {
     
@@ -53,9 +54,17 @@ public class Main {
                                    , "이탈리아", "로마"
                                    , "스위스", "베른"
                                    , "영국", "런던");
-     
-     
-  }
+     int count = 0;
+     Scanner sc = new Scanner(System.in);
+     for (Map.Entry<String, String> entry : map.entrySet()) {
+       System.out.println(entry.getKey() + "수도는?");
+       String capital = sc.next();
+       if(capital.equals(entry.getValue())){
+        count++; 
+       }
+     }
+     System.out.println(count + "개 정답성공");
+     }
   
   public static void method4() {
 
@@ -69,7 +78,17 @@ public class Main {
     // 출금 전 1원, 6회 출금액 1원, 출금 후 0원
   
     int balance = 5000;
-    
+    int count = 0;
+    while(balance > 0) {
+      
+      int withdrawal = (int)(Math.random() * balance) + 1; 
+      count++;
+      System.out.println("출금 전" +  balance + "원, 출금횟수 "+ count + 
+          "출금액" +  withdrawal + "원," + "출금 후"+  (balance - withdrawal) + "원,");
+      balance -= withdrawal;
+     
+    // balance = balance - withdrawal;
+    }
   }
   
   public static void method5() {
@@ -194,7 +213,7 @@ public class Main {
     
   }
   
-  private static void numberCheck(String str) throws NumberInputException {
+  /*private static void numberCheck(String str) throws NumberInputException {
     if (str.length() != 4) {
       throw new NumberInputException("4자리 숫자를 입력하세요");
     }
@@ -209,18 +228,19 @@ public class Main {
       if (cnt[c-'0'] > 1)
         throw new NumberInputException("중복된 숫자가 입력되었습니다.");
     }
-  }
+  }*/
   
   public static void main(String[] args) {
-    
+   
+    method4();
     // method1(); ~ method10(); 그냥 호출하면 됩니다.
     
     // method2(); 주민등록번호를 전달해서 실행합니다.
-    Map<String, Object> map = method2("140101-4123456");
-    for(Entry<String, Object> entry : map.entrySet()) {
-      System.out.println(entry.getKey() + ": " + entry.getValue());
+   // Map<String, Object> map = method2("140101-4123456");
+    //for(Entry<String, Object> entry : map.entrySet()) {
+      //System.out.println(entry.getKey() + ": " + entry.getValue());
     }
 
   }
   
-}
+//}
