@@ -213,7 +213,7 @@ public class Main {
     
   }
   
-  /*private static void numberCheck(String str) throws NumberInputException {
+  private static void numberCheck(String str) throws NumberInputException {
     if (str.length() != 4) {
       throw new NumberInputException("4자리 숫자를 입력하세요");
     }
@@ -228,7 +228,7 @@ public class Main {
       if (cnt[c-'0'] > 1)
         throw new NumberInputException("중복된 숫자가 입력되었습니다.");
     }
-  }*/
+  }
   
   public static void main(String[] args) {
    
