@@ -15,6 +15,9 @@ public class DoWhileEx {
     
     System.out.println(total);
 
+    
+
+    
   }
 
 }

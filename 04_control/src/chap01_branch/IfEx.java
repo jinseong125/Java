@@ -13,16 +13,16 @@ public class IfEx {
     }
     
     // 3의 배수
-    int y = 10;
+    int y = 11;
     if (y % 3 ==0) {
       System.out.println(y + "은(는) 3의 배수입니다.");
     } else {
-      System.out.println(x +"은(는) 3의 배수가 아닙니다.");
+      System.out.println(y +"은(는) 3의 배수가 아닙니다.");
     }
     
     // 학점(A, B, C, D, F)
-    int score = 90;
-    int grade;  //----- 추천은 char grade; 입니다.
+    int score = 70;
+    int grade;  //----- 추천은 char grade; 입니다. grade -학점
     if(score >= 90) {
       grade = 'A';
     } else if (score >= 80) {
