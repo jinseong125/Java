@@ -22,6 +22,6 @@ public class ForEx {
       }
     }
     oddAverage = (double)oddTotal / oddCount; // oddTotal을 double로 casting하면, oddCount는 double로 promotion 됩니다.
-    System.out.println(oddAverage);
+    System.out.println(oddAverage); 
   }
 }
